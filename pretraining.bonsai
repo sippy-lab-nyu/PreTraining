@@ -64,8 +64,8 @@
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="p1:StateTransition">
                 <p1:Trial>5</p1:Trial>
-                <p1:Id>Response</p1:Id>
-                <p1:ElapsedTime>80697.103616</p1:ElapsedTime>
+                <p1:Id>ITI</p1:Id>
+                <p1:ElapsedTime>80161.5897344</p1:ElapsedTime>
               </Combinator>
             </Expression>
             <Expression xsi:type="Combinator">
@@ -94,21 +94,17 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>Data\Test\2021-03-01T22-24-37/StateTransitions.csv</io:FileName>
+              <io:FileName>Data\Test\2021-03-01T22-15-33/StateTransitions.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
               <io:IncludeHeader>true</io:IncludeHeader>
             </Expression>
-            <Expression xsi:type="Disable">
-              <Builder xsi:type="SubscribeSubject">
-                <Name>Lick</Name>
-              </Builder>
+            <Expression xsi:type="SubscribeSubject">
+              <Name>Lick</Name>
             </Expression>
-            <Expression xsi:type="Disable">
-              <Builder xsi:type="IncludeWorkflow" Path="Extensions\LogState.bonsai">
-                <Id>Lick</Id>
-              </Builder>
+            <Expression xsi:type="IncludeWorkflow" Path="Extensions\LogState.bonsai">
+              <Id>Lick</Id>
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="num:CreateRandom">
@@ -152,7 +148,7 @@
               </PropertyMappings>
             </Expression>
             <Expression xsi:type="io:CsvWriter">
-              <io:FileName>Data\Test\2021-03-01T22-24-37/sounds.csv</io:FileName>
+              <io:FileName>Data\Test\2021-03-01T22-15-33/sounds.csv</io:FileName>
               <io:Append>false</io:Append>
               <io:Overwrite>false</io:Overwrite>
               <io:Suffix>None</io:Suffix>
